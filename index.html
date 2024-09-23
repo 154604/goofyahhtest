@@ -3,12 +3,32 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" scr="https://github.com/154604/Test/raw/refs/heads/main/style.css">
 </head>
+  <style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #04AA6D;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+</style>
   <body>
 <h1>Hello World!</h1>
 <h5>from the repo</h5>
+<button class="button1">Green</button>
+<button class="button2">Blue</button>
   </body>
   <script src="https://github.com/154604/Test/raw/refs/heads/main/scripts.js"></script>
   <script>
-    console.log("Js test");
-  </script> 
+    function button1() {
+      console.log("button1 pressed");
+    }
+  </script>
 </html>
