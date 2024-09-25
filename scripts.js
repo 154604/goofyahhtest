@@ -1,4 +1,4 @@
-console.log("Testing js file link");
+console.warn("Testing js file link");
 function button() {
 console.warn("Test button pressed");
   }
