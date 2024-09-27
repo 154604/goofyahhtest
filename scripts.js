@@ -1,8 +1,4 @@
-console.warn("Testing js file link");
-function button() {
-console.warn("Test button pressed");
-  }
-console.warn("Hello world from the repo!1!!1!!!1");
+console.warn("js file link");
 
 function index() {
   window.location.href = "/index.html";
