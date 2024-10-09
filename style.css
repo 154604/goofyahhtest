@@ -25,3 +25,6 @@ li a:hover:not() {
 body {
   background-color: lightblue;
 }
+form {
+  align: right;
+}
