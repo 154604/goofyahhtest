@@ -12,3 +12,7 @@ function index3() {
 function index4() {
   window.location.href = "/index4.html";
 }
+function access() {
+  window.location.href = "/access.html";
+}
+
