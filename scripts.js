@@ -16,3 +16,14 @@ function access() {
   window.location.href = "/access.html";
 }
 
+function checkCookie() {
+  let username = getCookie("sstate");
+  if (sstate != "1") {
+    window.location.href = "/access.html";
+  } else {
+    username = prompt("Please enter your name:", "");
+    if (sstate != "" && username != null) {
+    window.location.href = "/index.html";
+    }
+  }
+}
