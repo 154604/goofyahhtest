@@ -16,9 +16,11 @@
   <script src="scripts.js">
   </script>
   <script>
+    function cookie() {
   let username = getCookie("sstate");
-  if (username != "0") {
+  if (username != "0" || username != null) {
     window.location.href = "index.html";
   }
+}
   </script>
 </html>
