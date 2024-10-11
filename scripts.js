@@ -15,15 +15,3 @@ function index4() {
 function access() {
   window.location.href = "/access.html";
 }
-
-function checkCookie() {
-  let sstate = getCookie("sstate");
-  if (sstate != "1") {
-    window.location.href = "/access.html";
-  } else {
-    username = prompt("Please enter your name:", "");
-    if (sstate != "" && username != null) {
-    window.location.href = "/index.html";
-    }
-  }
-}
