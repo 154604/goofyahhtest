@@ -17,7 +17,7 @@ function access() {
 }
 
 function checkCookie() {
-  let username = getCookie("sstate");
+  let sstate = getCookie("sstate");
   if (sstate != "1") {
     window.location.href = "/access.html";
   } else {
