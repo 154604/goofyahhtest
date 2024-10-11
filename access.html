@@ -19,7 +19,7 @@
   <script>
     function cookie() {
   let username = getCookie("sstate");
-  if (username != "0" || username != null) {
+  if (username == "0" || username == null) {
     window.location.href = "index.html";
   }
 }
