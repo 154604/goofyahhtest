@@ -17,14 +17,7 @@
   <script src="scripts.js">
   </script>
   <script>
-    function cookie() {
-  let username = getCookie("sstate");
-  if (username == "0" || username == null) {
-    window.location.href = "index.html";
-  }
-}
-    cookie();
-    if (document.cookie == "sstate=0" || document.cookie == "") {
+    if (document.cookie = "sstate=0") {
       window.location.href = "index.html";
     }
   </script>
