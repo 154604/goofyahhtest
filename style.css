@@ -22,7 +22,7 @@ li a:hover:not() {
   background-color: #111;
 }
 
-li b() {
+li b {
   background-color: #c4bd95;
   align: right;
 }
