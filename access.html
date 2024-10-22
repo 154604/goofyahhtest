@@ -23,5 +23,16 @@
     else {
        window.location.href = "index.html"
     }
+    
+    function checkCookie() {
+  let username = getCookie("sstate");
+  if (username != "1") {
+   alert("Welcome again " + username);
+  } else {
+    if (username != "" && username != null) {
+      setCookie("username", username, 365);
+    }
+  }
+}
   </script>
 </html>
