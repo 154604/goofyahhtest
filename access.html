@@ -17,13 +17,6 @@
   <script src="scripts.js">
   </script>
   <script>
-    if (window.history.previous == "loginredirect.html") { 
-      console.log("Window history test passed");
-    }
-    else {
-       window.location.href = "index.html"
-    }
-    
     function checkCookie() {
   let username = getCookie("sstate");
   if (username != "1") {
