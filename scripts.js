@@ -1,5 +1,3 @@
-console.warn("js file link");
-
 function index() {
   window.location.href = "/index.html";
 }
