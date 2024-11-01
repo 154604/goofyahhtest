@@ -2,8 +2,10 @@
   <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="style.css">
+<script src="js/md5.min.js"></script>
 </head>
   <body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <ul>
   <li><a onclick="index()" class="active" href="index.html">Home</a></li>
   <li><a onclick="index2()" href="index2.html">News</a></li>
@@ -11,15 +13,28 @@
   <li><a onclick="index4()" href="index4.html">About</a></li>
 </ul>
 <h1>Log in</h1>
-<form action="https://responsetest.w3spaces.com/index.html">
+<form>
   <label for="pwd">Password:</label>
-  <input type="password" id="password" name="password" minlength="4"><br><br>
-  <input type="submit">
+  <input type="password1" id="password" name="password" minlength="4"><br><br>
+  <button type="button" onclick="hashpwd();">Click Me!</button>
 </form>
   </body>
   <script src="scripts.js">
   </script>
   <script>
     document.cookie = "sstate=";
+//    let str = 'hello world';
+//    var hashed = md5(str);
+//      console.log(hashed);
+
+      function hashpwd() {
+          let str = password;
+          let hash = md5(str);
+//          if (hash == "e0b73a1699aeee785d156388f584cf74") {
+//              window.location.replace("loginredirect.html");
+//              }
+          window.location.replace("https://responsetest.w3spaces.com/index.html?password=" + hash);
+          }
+      
   </script>
 </html>
